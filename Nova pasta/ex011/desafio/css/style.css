@@ -1,0 +1,33 @@
+body{
+    background-color: #2c2c2c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    margin-right: 15px;
+}
+
+a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
