@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        /*h1 {
+            color: rgb(255, 212, 22);
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] //Pega o que está escrito no <p> e guarda na variável. O [] determina qual <p> está sendo selecionado.
+        //var d = window.document.getElementById('msg')
+        
+        window.document.write('<br/>Está escrito assim: ' + p1.innerText + '<br/><br/>') //Escreve na tela o que está na variável p1 sem a formatação do HTML
+        window.document.write('Está escrito assim: ' + p1.innerHTML + '<br/><br/>') //Escreve na tela o que está na variável p1 com a formatação do HTML
+        //window.alert(p1.innerText)
+
+        p1.style.color = 'blue' //Muda cor do <p>
+        corpo.style.background = 'black' //Muda cor de fundo do Body
+
+        /*d.style.background = 'gray' //Muda cor de fundo da div
+        //d.innerText = 'Estou aguardando...' //Muda texto da div
+        window.document.getElementById('msg').innerText = 'Olá' //Muda texto da div*/corpo
+
+        /*var d = window.document.getElementsByName('msg')[0]
+        d.innerHTML = 'Olá!'*/
+
+        var d = window.document.querySelector('div#msg') // quando é id vai # e quando é class vai .
+        d.style.background = 'gray'
+    </script>
+</body>
+</html>

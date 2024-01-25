@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var n1 = Number(window.prompt('Digite um número: ')) //converter de String para Inteiro
+        
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Seu nome em maiúsculas ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em minúsculas ${nome.toLowerCase()} <br/><br/>`)
+
+        document.write(`Você digitou o número ${n1} <br/>`)
+        document.write(`Ele formatado com duas casas após a virgula ${n1.toFixed(2)} <br/>`)
+        document.write(`Ele formatado em Real ${n1.toLocaleString('pt-BR',{style: 'currency', currency:'BRL' })} <br/>`)
+        document.write(`Ele formatado em Dólar ${n1.toLocaleString('pt-BR',{style: 'currency', currency:'USD' })} <br/>`)
+        document.write(`Ele formatado em Euro ${n1.toLocaleString('pt-BR',{style: 'currency', currency:'EUR' })} <br/>`)
+    </script>
+</body>
+</html>
